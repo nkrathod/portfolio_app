@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio Nitesh Rathod Software Developer">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, React JS, Portfolio, Software Developer, Software Engineer, ReactJS Developer, MERN">
+  <meta name="author" content="Nitesh Rathod">
+  <title>Nitesh Rathod - Software Developer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/b84f8c294a.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!--   header -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span style='color:#ff004f'>Port</span>folio</h1>
+        <!--         <img src="" alt=""> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>ME<span>R</span>N Stack Developer</p>
+        <h1>Hi, I'm <span>Nitesh</span><br>Rathod From Pune, <span>India</span></h1>
+        <a href="Nitesh_Software_Engineer.pdf" download class="more-btn btn2">Download CV <i
+            class="fa-solid fa-cloud-arrow-down"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--   about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="ProfilePic.JPG" alt="Nitesh Rathod">
+          <!--           <img src="assets/sitbg1.png" alt="Nitesh Rathod"> -->
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About <span>Me</span></h1>
+          <p>I am Nitesh Rathod. I have 4+ years of experience in Web development using React, Redux, JavaScript,
+            TypeScript, Node JS, Express JS, MongoDB, Material UI, Bootstrap, Git and AWS. I have worked in different
+            domains such as Retail, Ecommerce, EdTech, Social and Insurance.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span><b>React</b></span><br>Developed web application using React JS</li>
+              <li><span><b>Redux</b></span><br>JavaScript library for managing and centralizing application state.</li>
+              <li><span><b>JavaScript</b></span><br>Developed web application</li>
+              <li><span><b>Node</b></span><br>Building Restful APIs using Node js, Express js and AWS API Gateway.</li>
+              <li><span><b>AWS</b></span><br>Developed serverless application using Node and AWS Lambda.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span><b>Accenture</b> ( Jan 2022 - Current )</span><br>Custom Software Engineering Senior Analyst
+              </li>
+              <li><span><b>Randstad Technologies</b> ( Jun 2022- Dec 22 )</span><br>Senior Software Developer
+              </li>
+              <li><span><b>K12 Techno Services Pvt. Ltd</b> ( Jan 2021- Jun 22 )</span><br>Senior Software Developer
+              </li>
+              <li><span><b>AdroitCoders</b> ( Jun 2020 - Jan 2021 )</span><br>Software Developer</li>
+              <li><span><b>Nvidia</b> ( Dec 2017 - Jun 2019 )</span><br>Process Executive</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span><b>VPKBIET</b>, Baramati</span><br>BE in Computer Engineering</li>
+              <li><span><b>HSC</b>, Chhatrapati Sambhaji Nagar</span><br>Science</li>
+              <li><span><b>SSC</b>, Chhatrapati Sambhaji Nagar</span><br>Marathi medium</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <i class="fa-solid fa-circle-up" onclick="location.href='#'"></i>
+  <i class="fa-regular fa-circle-up" onclick="location.href='#'"></i>
+  <!--   services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My <span>Services</span></h1>
+      <div class="services-list">
+        <div id="myBtn">
+          <i class="fa-brands fa-react"></i>
+          <h2>Web Application</h2>
+          <p>Frontend application using React, JavaScript, HTML, CSS and Bootstrap</p>
+          <a>Learn more ...</a>
+        </div>
+        <div id="myBtn1">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          <h2>E-commerce Website</h2>
+          <p>Serverless application using React, Node, JavaScript, HTML, CSS, Material UI and AWS Lambda</p>
+          <a>Learn more ...</a>
+        </div>
+        <div id="myBtn2">
+          <i class="fa-brands fa-wordpress"></i>
+          <h2>Portfolio Website</h2>
+          <p>Static Website using HTML, CSS, JavaScript and Bootstrap</p>
+          <a>Learn more ...</a>
+        </div>
+        <div id="myBtn3">
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Mobile App</h2>
+          <p>Design and developing Android and iOS App in React Native</p>
+          <a>Learn more ...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2><i class="fa-brands fa-react"></i> Web Application</h2>
+      </div>
+      <div class="modal-body">
+        <img class="img2" src="https://cdn.pixabay.com/photo/2017/01/29/13/21/mobile-devices-2017980_960_720.png"
+          alt="Pineapple" width="250" height="250">
+        <p>Frontend application using React, JavaScript, HTML, CSS and Bootstrap</p>
+      </div>
+      <!--       <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="myModal1" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2><i class="fa-sharp fa-solid fa-cart-shopping"></i> E-commerce Website</h2>
+      </div>
+      <div class="modal-body">
+        <img class="img2" src="https://cdn.pixabay.com/photo/2016/08/17/04/43/template-1599667_960_720.png"
+          alt="Pineapple">
+        <p>We make E-commerce Serverless application using React, Node, Commercetool, JavaScript, HTML, CSS, Material UI
+          and AWS Lambda.
+          Commercetools provides a portfolio of composable commerce services that allow you to tailor commerce to the
+          needs of your business, so you can create powerful, highly customized interactions with your customers while
+          building a profitable, sustainable brand at an infinite scale.</p>
+      </div>
+      <!--       <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="myModal2" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2><i class="fa-brands fa-wordpress"></i> Portfolio Website</h2>
+      </div>
+      <div class="modal-body">
+        <img class="img2"
+          src="https://media.istockphoto.com/id/1072179256/vector/concept-ux-user-experience-development-design-usability-improve-software-develop-company-ui.jpg?s=2048x2048&w=is&k=20&c=PCZ9m5QjA-fRDJOo1IvqBm0pfGNle7ScvFFySBROGrQ="
+          alt="Pineapple" width="250" height="250">
+        <p>Static Website using HTML, CSS, JavaScript and Bootstrap. Frontend application using React, JavaScript, HTML,
+          CSS and Bootstrap</p>
+      </div>
+      <!--       <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="myModal3" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2><i class="fa-brands fa-app-store"></i> Mobile App</h2>
+      </div>
+      <div class="modal-body">
+        <img class="img2" src="https://cdn.pixabay.com/photo/2016/02/07/14/45/smartphone-1184883_960_720.png"
+          alt="Pineapple" width="250" height="250">
+        <p>Design and developing Android and iOS App in React Native. React Native is widely adopted and is a more
+          popular app development framework than Flutter. React Native is a JavaScript framework for writing real,
+          natively rendering mobile applications for iOS and Android. It's based on React, Facebook's JavaScript library
+          for building user interfaces, but instead of targeting the browser, it targets mobile platforms.</p>
+      </div>
+      <!--       <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div> -->
+    </div>
+  </div>
+
+  <!--   Project -->
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">My <span>Project</span></h1>
+      <div class="work-list" id="work-list">
+
+        <div class="work">
+          <img src="assets/work_1.jpg">
+          <div class="layer">
+            <h3>Affiliate Marketing Web app</h3>
+            <p>The app connect you the talented people around the world. Download it from play store</p>
+            <a href="https://my.wealthyaffiliate.com/home" target=”_blank”>
+              <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://alwaysonlearning.com/wp-content/uploads/2022/10/cropped-cropped-AOL-FINAL_-jpg.png">
+          <div class="layer">
+            <h3>Always On Learning</h3>
+            <p>Always On Learning is the best virtual school in India</p>
+            <a href="https://alwaysonlearning.com/">
+              <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://erp.letseduvate.com/static/media/logo.56aee486.png">
+          <div class="layer">
+            <h3>Lets Eduvate App</h3>
+            <p>Eduvate is a school management software providing integrated Curriculum for Schools, tools and resources
+              for teachers, and classroom managment solutions.</p>
+            <a href="https://erp.letseduvate.com/" target=”_blank”>
+              <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="more-btn" onclick="showMore()" id="show_more">Show more</button>
+      <button class="more-btn" onclick="showLess()" id="show_less">Show Less</button>
+    </div>
+  </div>
+
+  <!--   contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact <span>Me</span></h1>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span class="tip">Email Id
+              <span class=" tooltiptext" id="tooltip">Email Id copied</span>
+            </span>
+          <h6 class="tooltip" title="Copy Email Id" id="emailId" onclick="copyText('emailId')">nkrsoft.tech@gmail.com
+          </h6>
+          </p>
+          <p>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span class="tip">Mobile No.
+              <span class="tooltiptext" id="tooltip1">Mobile no copied</span>
+            </span>
+          <h6 class="tooltip" title="Copy Mobile no" id="mobileNo" onclick="copyText('mobileNo')">+91 8007800858</h6>
+          </p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nitesh-rathod-8841b09b/" target=”_blank”><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/NiteshRathod007" target=”_blank”><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/nitesh.rathod.5076" target=”_blank”><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/niteshkumar_rathod/" target=”_blank”><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/nkrathod" target=”_blank”><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="Nitesh_Software_Engineer.pdf" download class="more-btn btn2">Download CV</a>
+        </div>
+        <div class="contact-rigth">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter Your Name" required>
+            <input type="email" name="Email" placeholder="Enter Your Email Id" required>
+            <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+            <span id="msg"></span>
+            <button type="submit" class="more-btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   footer -->
+  <div class="footer">
+    <p>Copyright <span>©</span> Nitesh Rathod. Made with <i class="fa-solid fa-heart"></i> by NKRSOFT</p>
+  </div>
+  <!--   ---- JavaScript ----  -->
+  <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    function openTab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("active-links")
+      }
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabName).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-150px";
+    }
+    function copyText(id) {
+      let text = document.getElementById(id).innerHTML;
+      let elem = document.createElement("textarea");
+      document.body.appendChild(elem);
+      elem.value = text;
+      elem.select();
+      document.execCommand("copy");
+      document.body.removeChild(elem);
+      let tIds = (id === 'emailId') ? 'tooltip' : 'tooltip1'
+      let tooltip = document.getElementById(tIds);
+      tooltip.style.visibility = "visible";
+      setTimeout(() => {
+        tooltip.style.visibility = "hidden";
+      }, 500)
+    }
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var modal1 = document.getElementById("myModal1");
+    var modal2 = document.getElementById("myModal2");
+    var modal3 = document.getElementById("myModal3");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    var btn1 = document.getElementById("myBtn1");
+    var btn2 = document.getElementById("myBtn2");
+    var btn3 = document.getElementById("myBtn3");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var span1 = document.getElementsByClassName("close")[1];
+    var span2 = document.getElementsByClassName("close")[2];
+    var span3 = document.getElementsByClassName("close")[3];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    btn1.onclick = function () {
+      modal1.style.display = "block";
+    }
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    }
+    btn3.onclick = function () {
+      modal3.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    span1.onclick = function () {
+      modal1.style.display = "none";
+    }
+    span2.onclick = function () {
+      modal2.style.display = "none";
+    }
+    span3.onclick = function () {
+      modal3.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function showMore() {
+      console.log('showmore clicked');
+
+      fetch("db.json")
+        .then(response => response.json())
+        .then(workItem => {
+          console.log(workItem.work);
+          workItem && workItem.work.length > 0 && workItem.work.map((item) => {
+            let work = document.createElement("div");
+            work.className = "work";
+            let img = document.createElement("img");
+            img.src = item.img;
+            work.appendChild(img)
+
+            let div = document.createElement("div");
+            div.className = "layer";
+
+            let h3 = document.createElement("h3");
+            let text = document.createTextNode(item.title);
+            h3.appendChild(text)
+            div.appendChild(h3)
+
+            let p = document.createElement("p");
+            let pText = document.createTextNode(item.subTitle);
+            p.appendChild(pText);
+            div.appendChild(p)
+
+            let a = document.createElement("a");
+            a.href = item.url;
+            a.target = "_blank";
+            let icon = document.createElement("i");
+            icon.className = "fa-sharp fa-solid fa-up-right-from-square";
+            a.appendChild(icon)
+            div.appendChild(a)
+
+            work.appendChild(div)
+            document.getElementById("work-list").appendChild(work);
+
+            let showButton = document.getElementById("show_less");
+            showButton.style.display = "block"
+
+            let hideButton = document.getElementById("show_more");
+            hideButton.style.display = "none"
+          })
+        });
+    }
+    function showLess() {
+      const workList = document.getElementById("work-list");
+      workList.removeChild(workList.lastElementChild);
+
+      let showButton = document.getElementById("show_less");
+      showButton.style.display = "none"
+
+      let hideButton = document.getElementById("show_more");
+      hideButton.style.display = "block"
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMJxEdpNVXE6OO0SRV1qmZNLglxuCrhiS8HrQ4jJwWXnkpdN4dxDKWJ3trjz94tSrjpA/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.style.color = '#61b752';
+          msg.innerHTML = "Message sent successfully..! Thank you for contacting me..!"
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => {
+          msg.style.color = '#ff004f';
+          msg.innerHTML = "Something went wrong try again later..!";
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 5000)
+        })
+    })
+  </script>
+</body>
+
+</html>

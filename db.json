@@ -1,0 +1,29 @@
+{
+  "work": [
+    {
+      "title": "My Blog",
+      "subTitle": "My Blog is developed in React JS with Typescript. You can learn React JS from My blog",
+      "url": "https://blog.nkrathod.repl.co/",
+      "img": "assets/MyBlog.png"
+  }],
+  "item": [
+    {
+      "title": "Affiliate Marketing Web app",
+      "subTitle": "The app connect you the talented people around the world. Download it from play store",
+      "url": "https://my.wealthyaffiliate.com/home",
+      "img": "assets/work_1.jpg"
+    },
+    {
+      "title": "Always On Learning",
+      "subTitle": "Always On Learning is the best virtual school in India",
+      "url": "https://alwaysonlearning.com/",
+      "img": "https://alwaysonlearning.com/wp-content/uploads/2022/10/cropped-cropped-AOL-FINAL_-jpg.png"
+    },
+    {
+      "title": "Lets Eduvate App",
+      "subTitle": "Eduvate is a school management software providing integrated Curriculum for Schools, tools and resources for teachers, and classroom managment solutions.",
+      "url": "https://erp.letseduvate.com/",
+      "img": "https://erp.letseduvate.com/static/media/logo.56aee486.png"
+    }
+  ]
+}
